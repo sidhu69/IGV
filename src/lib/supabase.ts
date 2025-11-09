@@ -68,3 +68,22 @@ export interface Vote {
   show_id: string;
   voted_at: string;
 }
+
+export interface SpeakerSeat {
+  id: string;
+  show_id: string;
+  seat_number: number;
+  user_id?: string;
+  is_muted: boolean;
+  joined_at: string;
+  user_profiles?: UserProfile;
+}
+
+export interface ShowComment {
+  id: string;
+  show_id: string;
+  user_id: string;
+  comment_text: string;
+  created_at: string;
+  user_profiles?: UserProfile;
+}
